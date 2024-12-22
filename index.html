@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcomePage">
+        <div id="welcomeContainer">
+            <h1>Welcome to the Bubble Game!</h1>
+            <p>Pop the bubbles matching the target number to score points. Be quick – the timer is ticking!</p>
+            <button id="startButton">Start Game</button>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#startButton").addEventListener("click", function() {
+            window.location.href = "index2.html";
+        });
+    </script>
+</body>
+</html>

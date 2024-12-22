@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#welcomePage{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: url('https://media.istockphoto.com/id/1580665292/photo/reflecting-the-rainbow-shiny-balls-build-mesmerizing-colorful-heap.jpg?s=2048x2048&w=is&k=20&c=kCDCzzKccnqMUFd4BmcH3foyuM7PeyoqEv2-9ZiP0dE=');
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+}
+#welcomeContainer{
+    padding: 40px;
+    background: rgba(188, 142, 150, 0.975);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+#welcomeContainer h1 {
+    font-size: 48px;
+    color: #ef5350;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#welcomeContainer p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+#startButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: #66bb6a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+#startButton:hover {
+    background: #43a047;
+    scale: 1.05;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
